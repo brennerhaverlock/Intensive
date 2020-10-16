@@ -9,15 +9,47 @@ const result = document.getElementById('result')
 const apiURL = 'https://api.lyrics.ovh';
 
 
-// event listen for button press 
+/// adding event listener in form
+
 form.addEventListener('submit', e=> {
     e.preventDefault();
-    searchResult = search.value.trim()
-
-    if(!searchResult){
-        alert("Please enter a valid song")
+    searchValue = search.value.trim()
+    
+    if(!searchValue){
+        alert("There is nothing to search")
     }
     else{ 
-        searchSong(searchResult)
+        searchSong(searchValue)
     }
 })
+
+
+//search song 
+async function searchSong(searchValue){
+    const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`)
+    const data = await searchResult.json();
+    console.log(searchResult)
+    // console.log(finaldata)
+    showData(data)
+}
+
+//display final result in DO
+function showData(data){
+  
+    result.innerHTML = `
+    <ul class="song-list">
+      ${data.data
+        .map(song => `<li>
+                    <div>
+                        <strong>${song.artist.name}</strong> -${song.title} 
+                    </div>
+                    <span data-artist="${song.artist.name}" data-songtitle="${song.title}"> Lyrics</span>
+                </li>`
+        )
+        .join('')}
+    </ul>
+  `;
+}
+
+
+
