@@ -106,7 +106,7 @@ li {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.song-list {
+.track-list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@ li {
   transform: translate(-50%, 0);
   background: linear-gradient(to left, rgb(40, 40, 40), rgb(40, 40, 40));
 }
-.song-list li {
+.track-list li {
   margin-bottom: 20px;
   width: 500px;
   justify-content: space-evenly;
@@ -128,7 +128,7 @@ li {
   /* line-height: 30px; */
 }
 
-.song-list li::after {
+.track-list li::after {
   content: '';
   position: absolute;
   right: -20px;
@@ -138,11 +138,11 @@ li {
   background: rgb(14, 78, 56);
   display: inline-block;
 }
-.song-list li div {
+.track-list li div {
   float: left;
 }
 
-.song-list li span {
+.track-list li span {
   float: right;
   background-color: #2936e2;
   border: 0;
