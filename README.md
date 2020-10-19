@@ -7,9 +7,9 @@ Simple Lyric Generator using Lyrics API
   
 # Screenshots
 
- <img src="https://ibb.co/C50fDg0" alt="Search Bar" width="500" height="600"> 
- <img src="https://ibb.co/99h16Pb" alt="Track List" width="500" height="600"> 
- <img src="https://ibb.co/0C4hNF3" alt="Lyrics" width="500" height="600"> 
+<a href="https://ibb.co/C50fDg0"><img src="https://i.ibb.co/MDNmQrN/Screen-Shot-2020-10-19-at-3-45-00-PM.png" alt="Search" border="0" height = 500 width = 500></a>
+<a href="https://ibb.co/99h16Pb"><img src="https://i.ibb.co/KjDfdn2/Screen-Shot-2020-10-19-at-3-44-54-PM.png" alt="Track List" border="0" height = 500 width = 500></a>
+<a href="https://ibb.co/0C4hNF3"><img src="https://i.ibb.co/ByWqDrR/Screen-Shot-2020-10-19-at-3-44-42-PM.png" alt="Lryics" border="0" height = 500 width = 500></a>
 
 
 ## Info 
